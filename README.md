@@ -1,5 +1,5 @@
 # 🚀 Muhammad Abdullah Rasheed
-## 🤖 AI Engineer | 📊 Data Scientist | 🧠 Machine Learning Specialist | 🌐 Full-Stack Developer
+## 🤖 AI Engineer | 📊 Data Scientist | 🧠 Machine Learning professional | 🌐 Full-Stack Developer
 
 <div align="center">
   
