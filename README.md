@@ -14,15 +14,18 @@
 
 ## About
 
-MSc Data Science (Distinction) based in Cambridge, UK. I work at the
-intersection of **numerical methods and machine learning** — building PDE
-solvers and neural-operator surrogates, distributed training pipelines, and
-LLM-driven agents. I care about code that is correct, tested, and honest about
-its trade-offs: most of my recent projects ship with a validation suite, CI, and
+ML Research Engineer at **Aeris UK**, based in London. MSc Data Science
+(Distinction). I work at the intersection of **numerical methods and machine
+learning** — reinforcement learning and simulation software, PDE solvers and
+neural-operator surrogates, distributed training pipelines, and LLM-driven
+agents. I care about code that is correct, tested, and honest about its
+trade-offs: most of my recent projects ship with a validation suite, CI, and
 benchmarks rather than just a notebook.
 
-- 🔭 Currently focused on **operator learning for PDEs** and high-performance numerical computing.
+- 🔭 Currently building **reinforcement-learning and simulation software** at Aeris UK.
+- 🧮 Research interest in **operator learning for PDEs** and high-performance numerical computing.
 - 🛠️ Comfortable across the stack: C++/OpenMP kernels, PyTorch (DDP/FSDP), and full-stack deployment.
+- 📊 **15+ ML models deployed** across research and production settings.
 - 📫 Reach me at **abdullahrasheed45@gmail.com** or on [LinkedIn](https://www.linkedin.com/in/abdullahrasheed-/).
 
 ## Featured work
@@ -62,16 +65,17 @@ benchmarks rather than just a notebook.
 
 ## Experience & education
 
-- **MSc Data Science** — Anglia Ruskin University, Cambridge *(Distinction)*
-- **BSc Economics** — Institute of Business Administration (IBA), Karachi *(Dean's Honour List)*
+- **ML Research Engineer** — Aeris UK *(current)* · reinforcement learning and simulation software
 - **Data Analyst** — Digital Pulse 360
 - **Full-Stack Developer** — ATnR, Karachi
+- **MSc Data Science** — Anglia Ruskin University, Cambridge *(Distinction)*
+- **BSc Economics** — Institute of Business Administration (IBA), Karachi *(Dean's Honour List)*
 
 **Certifications** · Google Advanced Data Analytics · Google AI Essentials · Google Data Analytics Professional · Tableau Specialization (UC Davis)
 
 ## GitHub
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=AbdullahRasheed45&show_icons=true&hide_border=true&count_private=true&theme=default" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbdullahRasheed45&layout=compact&hide_border=true&langs_count=8&theme=default" alt="Top languages" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=AbdullahRasheed45&show_icons=true&hide_border=true&count_private=true&theme=github_dark" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbdullahRasheed45&layout=compact&hide_border=true&langs_count=8&theme=github_dark" alt="Top languages" />
 </p>
