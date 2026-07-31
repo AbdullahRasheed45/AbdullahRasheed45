@@ -28,6 +28,38 @@ benchmarks rather than just a notebook.
 - **15+ ML models deployed** across research and production settings.
 - Reach me at **abdullahrasheed45@gmail.com** or on [LinkedIn](https://www.linkedin.com/in/abdullahrasheed-/).
 
+<!-- OSS-CONTRIBUTIONS:START -->
+
+## Open source contributions
+
+| Repo | Merged pull request(s) |
+|---|---|
+| [huggingface/transformers](https://github.com/huggingface/transformers) (163k⭐) | [#47663](https://github.com/huggingface/transformers/pull/47663) fix: correct text input validation logic in 8 multimodal processors (and → or) |
+
+Also have 18 pull requests currently under review across 12 other repositories:
+
+<details>
+<summary>Open pull requests</summary>
+
+| Repo | Pull request(s) |
+|---|---|
+| [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) (36k⭐) | [#10112](https://github.com/stanfordnlp/dspy/pull/10112) dedupe signatures by content · [#10085](https://github.com/stanfordnlp/dspy/pull/10085) roll nested usage-tracking scopes into enclosing tracker |
+| [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) (31k⭐) | [#21866](https://github.com/Lightning-AI/pytorch-lightning/pull/21866) bump `rich` upper bound for v15 support |
+| [pyg-team/pytorch_geometric](https://github.com/pyg-team/pytorch_geometric) (24k⭐) | [#10762](https://github.com/pyg-team/pytorch_geometric/pull/10762) raise on numpy arrays stored as tensor attributes · [#10756](https://github.com/pyg-team/pytorch_geometric/pull/10756) verify TLS certificates when downloading datasets |
+| [huggingface/datasets](https://github.com/huggingface/datasets) (22k⭐) | [#8368](https://github.com/huggingface/datasets/pull/8368) reject duplicate column names in `select_columns` |
+| [huggingface/peft](https://github.com/huggingface/peft) (21k⭐) | [#3477](https://github.com/huggingface/peft/pull/3477) remove forward hooks when the wrapped block raises |
+| [onnx/onnx](https://github.com/onnx/onnx) (21k⭐) | [#8215](https://github.com/onnx/onnx/pull/8215) fix node test directory count in `generate-data` |
+| [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) (13k⭐) | [#3971](https://github.com/EleutherAI/lm-evaluation-harness/pull/3971) & [#3970](https://github.com/EleutherAI/lm-evaluation-harness/pull/3970) fix `ValueError` on `batch_size="auto"` · [#3951](https://github.com/EleutherAI/lm-evaluation-harness/pull/3951) include `generation_kwargs` in request cache key |
+| [huggingface/accelerate](https://github.com/huggingface/accelerate) (10k⭐) | [#4138](https://github.com/huggingface/accelerate/pull/4138) reject sharded-checkpoint paths that escape the checkpoint folder |
+| [bentoml/BentoML](https://github.com/bentoml/BentoML) (9k⭐) | [#5676](https://github.com/bentoml/BentoML/pull/5676) keep every URL value of a multipart list field |
+| [cvxpy/cvxpy](https://github.com/cvxpy/cvxpy) (6k⭐) | [#3470](https://github.com/cvxpy/cvxpy/pull/3470) stop internal parameter checks warning about sparse `.value` reads |
+| [huggingface/lighteval](https://github.com/huggingface/lighteval) (2.5k⭐) | [#1314](https://github.com/huggingface/lighteval/pull/1314) fix always-true conditional hiding `DEFAULT_FORMAT` · [#1313](https://github.com/huggingface/lighteval/pull/1313) fix litellm judge sending `max_tokens` as a 1-tuple |
+| [Lightning-AI/torchmetrics](https://github.com/Lightning-AI/torchmetrics) (2.5k⭐) | [#3441](https://github.com/Lightning-AI/torchmetrics/pull/3441) & [#3440](https://github.com/Lightning-AI/torchmetrics/pull/3440) fix argument validation across multiple metrics |
+
+</details>
+
+<!-- OSS-CONTRIBUTIONS:END -->
+
 ## Featured work
 
 | Project | What it is | Stack |

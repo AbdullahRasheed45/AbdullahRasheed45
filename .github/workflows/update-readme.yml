@@ -1,0 +1,152 @@
+name: Update open source contributions
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # daily at 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Rebuild contributions section from live PR data
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const OWNER = "AbdullahRasheed45";
+            const REPO = "AbdullahRasheed45";
+            const USERNAME = "AbdullahRasheed45";
+            // Repo owners to leave out of the showcase: your own repos, and
+            // employer/private work that isn't open source.
+            const EXCLUDE_OWNERS = new Set(["AbdullahRasheed45", "UKAeris"]);
+
+            async function fetchAllPRs() {
+              const nodes = [];
+              let cursor = null;
+              while (true) {
+                const query = `
+                  query($login: String!, $cursor: String) {
+                    user(login: $login) {
+                      pullRequests(first: 100, after: $cursor, states: [MERGED, OPEN], orderBy: {field: CREATED_AT, direction: DESC}) {
+                        pageInfo { hasNextPage endCursor }
+                        nodes {
+                          title
+                          url
+                          state
+                          mergedAt
+                          createdAt
+                          repository {
+                            nameWithOwner
+                            stargazerCount
+                            isFork
+                            owner { login }
+                          }
+                        }
+                      }
+                    }
+                  }`;
+                const result = await github.graphql(query, { login: USERNAME, cursor });
+                const page = result.user.pullRequests;
+                nodes.push(...page.nodes);
+                if (!page.pageInfo.hasNextPage) break;
+                cursor = page.pageInfo.endCursor;
+              }
+              return nodes;
+            }
+
+            function fmtStars(n) {
+              if (n >= 10000) return Math.round(n / 1000) + "k";
+              if (n >= 1000) return (n / 1000).toFixed(1) + "k";
+              return String(n);
+            }
+
+            function groupByRepo(prs) {
+              const byRepo = new Map();
+              for (const pr of prs) {
+                const key = pr.repository.nameWithOwner;
+                if (!byRepo.has(key)) {
+                  byRepo.set(key, { stars: pr.repository.stargazerCount, prs: [] });
+                }
+                byRepo.get(key).prs.push(pr);
+              }
+              return [...byRepo.entries()].sort((a, b) => b[1].stars - a[1].stars);
+            }
+
+            const allPRs = await fetchAllPRs();
+            const relevant = allPRs.filter(
+              (pr) => !pr.repository.isFork && !EXCLUDE_OWNERS.has(pr.repository.owner.login)
+            );
+
+            const merged = relevant.filter((pr) => pr.state === "MERGED");
+            const open = relevant.filter((pr) => pr.state === "OPEN");
+
+            let section = "## Open source contributions\n\n";
+
+            if (merged.length === 0) {
+              section += "_No merged pull requests yet in tracked open source repos — check back soon._\n\n";
+            } else {
+              const mergedByRepo = groupByRepo(merged);
+              section += "| Repo | Merged pull request(s) |\n|---|---|\n";
+              for (const [repoName, data] of mergedByRepo) {
+                const links = data.prs
+                  .map((pr) => `[#${pr.url.split("/").pop()}](${pr.url}) ${pr.title}`)
+                  .join(" · ");
+                section += `| [${repoName}](https://github.com/${repoName}) (${fmtStars(data.stars)}⭐) | ${links} |\n`;
+              }
+              section += "\n";
+            }
+
+            if (open.length > 0) {
+              const openByRepo = groupByRepo(open);
+              section += `Also have ${open.length} pull request${open.length === 1 ? "" : "s"} currently under review across ${openByRepo.length} other repositor${openByRepo.length === 1 ? "y" : "ies"}:\n\n`;
+              section += "<details>\n<summary>Open pull requests</summary>\n\n| Repo | Pull request(s) |\n|---|---|\n";
+              for (const [repoName, data] of openByRepo) {
+                const links = data.prs
+                  .map((pr) => `[#${pr.url.split("/").pop()}](${pr.url}) ${pr.title}`)
+                  .join(" · ");
+                section += `| [${repoName}](https://github.com/${repoName}) (${fmtStars(data.stars)}⭐) | ${links} |\n`;
+              }
+              section += "\n</details>\n";
+            }
+
+            const { data: file } = await github.rest.repos.getContent({
+              owner: OWNER,
+              repo: REPO,
+              path: "README.md",
+            });
+            const content = Buffer.from(file.content, "base64").toString("utf-8");
+
+            const startMarker = "<!-- OSS-CONTRIBUTIONS:START -->";
+            const endMarker = "<!-- OSS-CONTRIBUTIONS:END -->";
+            const start = content.indexOf(startMarker);
+            const end = content.indexOf(endMarker);
+            if (start === -1 || end === -1) {
+              core.setFailed("README markers not found — cannot update contributions section.");
+              return;
+            }
+
+            const newContent =
+              content.slice(0, start + startMarker.length) +
+              "\n\n" +
+              section.trim() +
+              "\n\n" +
+              content.slice(end);
+
+            if (newContent === content) {
+              console.log("No changes — contributions section already up to date.");
+              return;
+            }
+
+            await github.rest.repos.createOrUpdateFileContents({
+              owner: OWNER,
+              repo: REPO,
+              path: "README.md",
+              message: "chore: auto-update open source contributions",
+              content: Buffer.from(newContent).toString("base64"),
+              sha: file.sha,
+            });
+
+            console.log("README.md updated.");
