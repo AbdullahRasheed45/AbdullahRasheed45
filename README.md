@@ -36,7 +36,7 @@ benchmarks rather than just a notebook.
 |---|---|
 | [huggingface/transformers](https://github.com/huggingface/transformers) (163k⭐) | [#47663](https://github.com/huggingface/transformers/pull/47663) fix: correct text input validation logic in 8 multimodal processors (and → or) |
 
-Also have 19 pull requests currently under review across 13 other repositories:
+Also have 18 pull requests currently under review across 12 other repositories:
 
 <details>
 <summary>Open pull requests</summary>
@@ -47,8 +47,7 @@ Also have 19 pull requests currently under review across 13 other repositories:
 | [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) (31k⭐) | [#21866](https://github.com/Lightning-AI/pytorch-lightning/pull/21866) Bump rich upper bound to <15.1.0 to support rich 15.0 |
 | [pyg-team/pytorch_geometric](https://github.com/pyg-team/pytorch_geometric) (24k⭐) | [#10762](https://github.com/pyg-team/pytorch_geometric/pull/10762) validate(): raise on numpy arrays stored as tensor attributes · [#10756](https://github.com/pyg-team/pytorch_geometric/pull/10756) Verify TLS certificates when downloading datasets |
 | [huggingface/datasets](https://github.com/huggingface/datasets) (22k⭐) | [#8368](https://github.com/huggingface/datasets/pull/8368) Reject duplicate column names in Dataset.select_columns |
-| [huggingface/peft](https://github.com/huggingface/peft) (21k⭐) | [#3477](https://github.com/huggingface/peft/pull/3477) Remove PEFT forward hooks when the wrapped block raises |
-| [onnx/onnx](https://github.com/onnx/onnx) (21k⭐) | [#8215](https://github.com/onnx/onnx/pull/8215) Fix node test directory count in generate-data |
+| [huggingface/peft](https://github.com/huggingface/peft) (22k⭐) | [#3477](https://github.com/huggingface/peft/pull/3477) Remove PEFT forward hooks when the wrapped block raises |
 | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) (14k⭐) | [#3971](https://github.com/EleutherAI/lm-evaluation-harness/pull/3971) fix: prevent ValueError when batch_size="auto" is passed to neuronx model · [#3970](https://github.com/EleutherAI/lm-evaluation-harness/pull/3970) fix: prevent ValueError when batch_size="auto:N" is passed to API models · [#3951](https://github.com/EleutherAI/lm-evaluation-harness/pull/3951) Include generation_kwargs in the request cache key |
 | [facebookresearch/hydra](https://github.com/facebookresearch/hydra) (11k⭐) | [#3333](https://github.com/facebookresearch/hydra/pull/3333) fix(optuna-sweeper): pass values=None when marking trial as FAIL, add NaN check |
 | [huggingface/accelerate](https://github.com/huggingface/accelerate) (9.8k⭐) | [#4138](https://github.com/huggingface/accelerate/pull/4138) Reject sharded-checkpoint shard paths that escape the checkpoint folder |
