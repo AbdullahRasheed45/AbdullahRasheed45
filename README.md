@@ -34,7 +34,7 @@ benchmarks rather than just a notebook.
 
 | Repo | Merged pull request(s) |
 |---|---|
-| [huggingface/transformers](https://github.com/huggingface/transformers) (163k⭐) | [#47663](https://github.com/huggingface/transformers/pull/47663) fix: correct text input validation logic in 8 multimodal processors (and → or) |
+| [huggingface/transformers](https://github.com/huggingface/transformers) (164k⭐) | [#47663](https://github.com/huggingface/transformers/pull/47663) fix: correct text input validation logic in 8 multimodal processors (and → or) |
 
 Also have 18 pull requests currently under review across 12 other repositories:
 
