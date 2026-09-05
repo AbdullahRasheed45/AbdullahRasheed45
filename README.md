@@ -37,7 +37,7 @@ benchmarks rather than just a notebook.
 | [huggingface/transformers](https://github.com/huggingface/transformers) (165k⭐) | [#47663](https://github.com/huggingface/transformers/pull/47663) fix: correct text input validation logic in 8 multimodal processors (and → or) |
 | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) (14k⭐) | [#3971](https://github.com/EleutherAI/lm-evaluation-harness/pull/3971) fix: prevent ValueError when batch_size="auto" is passed to neuronx model · [#3970](https://github.com/EleutherAI/lm-evaluation-harness/pull/3970) fix: prevent ValueError when batch_size="auto:N" is passed to API models |
 
-Also have 15 pull requests currently under review across 11 other repositories:
+Also have 14 pull requests currently under review across 10 other repositories:
 
 <details>
 <summary>Open pull requests</summary>
@@ -50,7 +50,6 @@ Also have 15 pull requests currently under review across 11 other repositories:
 | [huggingface/datasets](https://github.com/huggingface/datasets) (22k⭐) | [#8368](https://github.com/huggingface/datasets/pull/8368) Reject duplicate column names in Dataset.select_columns |
 | [huggingface/peft](https://github.com/huggingface/peft) (22k⭐) | [#3477](https://github.com/huggingface/peft/pull/3477) Remove PEFT forward hooks when the wrapped block raises |
 | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) (14k⭐) | [#3951](https://github.com/EleutherAI/lm-evaluation-harness/pull/3951) Include generation_kwargs in the request cache key |
-| [hydra-ecosystem/hydra](https://github.com/hydra-ecosystem/hydra) (11k⭐) | [#3333](https://github.com/hydra-ecosystem/hydra/pull/3333) fix(optuna-sweeper): pass values=None when marking trial as FAIL, add NaN check |
 | [bentoml/BentoML](https://github.com/bentoml/BentoML) (8.8k⭐) | [#5676](https://github.com/bentoml/BentoML/pull/5676) Keep every URL value of a multipart list field |
 | [cvxpy/cvxpy](https://github.com/cvxpy/cvxpy) (6.3k⭐) | [#3470](https://github.com/cvxpy/cvxpy/pull/3470) Stop internal parameter checks warning about sparse .value reads |
 | [huggingface/lighteval](https://github.com/huggingface/lighteval) (2.5k⭐) | [#1314](https://github.com/huggingface/lighteval/pull/1314) Fix always-true conditional that made DEFAULT_FORMAT unreachable · [#1313](https://github.com/huggingface/lighteval/pull/1313) Fix litellm judge sending max_tokens as a 1-tuple |
