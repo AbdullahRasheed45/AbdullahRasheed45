@@ -34,7 +34,7 @@ benchmarks rather than just a notebook.
 
 | Repo | Merged pull request(s) |
 |---|---|
-| [huggingface/transformers](https://github.com/huggingface/transformers) (165k⭐) | [#47663](https://github.com/huggingface/transformers/pull/47663) fix: correct text input validation logic in 8 multimodal processors (and → or) |
+| [huggingface/transformers](https://github.com/huggingface/transformers) (166k⭐) | [#47663](https://github.com/huggingface/transformers/pull/47663) fix: correct text input validation logic in 8 multimodal processors (and → or) |
 | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) (14k⭐) | [#3971](https://github.com/EleutherAI/lm-evaluation-harness/pull/3971) fix: prevent ValueError when batch_size="auto" is passed to neuronx model · [#3970](https://github.com/EleutherAI/lm-evaluation-harness/pull/3970) fix: prevent ValueError when batch_size="auto:N" is passed to API models |
 
 Also have 14 pull requests currently under review across 10 other repositories:
