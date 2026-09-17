@@ -37,14 +37,14 @@ benchmarks rather than just a notebook.
 | [huggingface/transformers](https://github.com/huggingface/transformers) (166k⭐) | [#47663](https://github.com/huggingface/transformers/pull/47663) fix: correct text input validation logic in 8 multimodal processors (and → or) |
 | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) (14k⭐) | [#3971](https://github.com/EleutherAI/lm-evaluation-harness/pull/3971) fix: prevent ValueError when batch_size="auto" is passed to neuronx model · [#3970](https://github.com/EleutherAI/lm-evaluation-harness/pull/3970) fix: prevent ValueError when batch_size="auto:N" is passed to API models |
 
-Also have 14 pull requests currently under review across 10 other repositories:
+Also have 13 pull requests currently under review across 10 other repositories:
 
 <details>
 <summary>Open pull requests</summary>
 
 | Repo | Pull request(s) |
 |---|---|
-| [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) (38k⭐) | [#10112](https://github.com/stanfordnlp/dspy/pull/10112) fix: deduplicate signatures by content in get_dspy_source_code (fixes silent drop of dynamic signatures) · [#10085](https://github.com/stanfordnlp/dspy/pull/10085) Roll nested track_usage() scopes up into the enclosing tracker |
+| [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) (38k⭐) | [#10112](https://github.com/stanfordnlp/dspy/pull/10112) fix: deduplicate signatures by content in get_dspy_source_code (fixes silent drop of dynamic signatures) |
 | [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) (31k⭐) | [#21866](https://github.com/Lightning-AI/pytorch-lightning/pull/21866) Bump rich upper bound to <15.1.0 to support rich 15.0 |
 | [pyg-team/pytorch_geometric](https://github.com/pyg-team/pytorch_geometric) (24k⭐) | [#10762](https://github.com/pyg-team/pytorch_geometric/pull/10762) validate(): raise on numpy arrays stored as tensor attributes · [#10756](https://github.com/pyg-team/pytorch_geometric/pull/10756) Verify TLS certificates when downloading datasets |
 | [huggingface/datasets](https://github.com/huggingface/datasets) (22k⭐) | [#8368](https://github.com/huggingface/datasets/pull/8368) Reject duplicate column names in Dataset.select_columns |
