@@ -44,7 +44,7 @@ Also have 13 pull requests currently under review across 10 other repositories:
 
 | Repo | Pull request(s) |
 |---|---|
-| [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) (38k⭐) | [#10112](https://github.com/stanfordnlp/dspy/pull/10112) fix: deduplicate signatures by content in get_dspy_source_code (fixes silent drop of dynamic signatures) |
+| [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) (39k⭐) | [#10112](https://github.com/stanfordnlp/dspy/pull/10112) fix: deduplicate signatures by content in get_dspy_source_code (fixes silent drop of dynamic signatures) |
 | [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) (31k⭐) | [#21866](https://github.com/Lightning-AI/pytorch-lightning/pull/21866) Bump rich upper bound to <15.1.0 to support rich 15.0 |
 | [pyg-team/pytorch_geometric](https://github.com/pyg-team/pytorch_geometric) (24k⭐) | [#10762](https://github.com/pyg-team/pytorch_geometric/pull/10762) validate(): raise on numpy arrays stored as tensor attributes · [#10756](https://github.com/pyg-team/pytorch_geometric/pull/10756) Verify TLS certificates when downloading datasets |
 | [huggingface/datasets](https://github.com/huggingface/datasets) (22k⭐) | [#8368](https://github.com/huggingface/datasets/pull/8368) Reject duplicate column names in Dataset.select_columns |
@@ -52,7 +52,7 @@ Also have 13 pull requests currently under review across 10 other repositories:
 | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) (14k⭐) | [#3951](https://github.com/EleutherAI/lm-evaluation-harness/pull/3951) Include generation_kwargs in the request cache key |
 | [bentoml/BentoML](https://github.com/bentoml/BentoML) (8.9k⭐) | [#5676](https://github.com/bentoml/BentoML/pull/5676) Keep every URL value of a multipart list field |
 | [cvxpy/cvxpy](https://github.com/cvxpy/cvxpy) (6.4k⭐) | [#3470](https://github.com/cvxpy/cvxpy/pull/3470) Stop internal parameter checks warning about sparse .value reads |
-| [huggingface/lighteval](https://github.com/huggingface/lighteval) (2.5k⭐) | [#1314](https://github.com/huggingface/lighteval/pull/1314) Fix always-true conditional that made DEFAULT_FORMAT unreachable · [#1313](https://github.com/huggingface/lighteval/pull/1313) Fix litellm judge sending max_tokens as a 1-tuple |
+| [huggingface/lighteval](https://github.com/huggingface/lighteval) (2.6k⭐) | [#1314](https://github.com/huggingface/lighteval/pull/1314) Fix always-true conditional that made DEFAULT_FORMAT unreachable · [#1313](https://github.com/huggingface/lighteval/pull/1313) Fix litellm judge sending max_tokens as a 1-tuple |
 | [Lightning-AI/torchmetrics](https://github.com/Lightning-AI/torchmetrics) (2.5k⭐) | [#3441](https://github.com/Lightning-AI/torchmetrics/pull/3441) fix(validation): correct argument validation in auroc, logauc, and pesq metrics · [#3440](https://github.com/Lightning-AI/torchmetrics/pull/3440) fix(validation): correct 'and' to 'or' in argument validation across multiple metrics |
 
 </details>
