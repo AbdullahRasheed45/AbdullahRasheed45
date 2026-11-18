@@ -35,7 +35,7 @@ benchmarks rather than just a notebook.
 | Repo | Merged pull request(s) |
 |---|---|
 | [huggingface/transformers](https://github.com/huggingface/transformers) (169k⭐) | [#47663](https://github.com/huggingface/transformers/pull/47663) fix: correct text input validation logic in 8 multimodal processors (and → or) |
-| [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) (14k⭐) | [#3971](https://github.com/EleutherAI/lm-evaluation-harness/pull/3971) fix: prevent ValueError when batch_size="auto" is passed to neuronx model · [#3970](https://github.com/EleutherAI/lm-evaluation-harness/pull/3970) fix: prevent ValueError when batch_size="auto:N" is passed to API models |
+| [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) (15k⭐) | [#3971](https://github.com/EleutherAI/lm-evaluation-harness/pull/3971) fix: prevent ValueError when batch_size="auto" is passed to neuronx model · [#3970](https://github.com/EleutherAI/lm-evaluation-harness/pull/3970) fix: prevent ValueError when batch_size="auto:N" is passed to API models |
 
 Also have 12 pull requests currently under review across 9 other repositories:
 
@@ -48,7 +48,7 @@ Also have 12 pull requests currently under review across 9 other repositories:
 | [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) (31k⭐) | [#21866](https://github.com/Lightning-AI/pytorch-lightning/pull/21866) Bump rich upper bound to <15.1.0 to support rich 15.0 |
 | [pyg-team/pytorch_geometric](https://github.com/pyg-team/pytorch_geometric) (24k⭐) | [#10762](https://github.com/pyg-team/pytorch_geometric/pull/10762) validate(): raise on numpy arrays stored as tensor attributes · [#10756](https://github.com/pyg-team/pytorch_geometric/pull/10756) Verify TLS certificates when downloading datasets |
 | [huggingface/datasets](https://github.com/huggingface/datasets) (22k⭐) | [#8368](https://github.com/huggingface/datasets/pull/8368) Reject duplicate column names in Dataset.select_columns |
-| [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) (14k⭐) | [#3951](https://github.com/EleutherAI/lm-evaluation-harness/pull/3951) Include generation_kwargs in the request cache key |
+| [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) (15k⭐) | [#3951](https://github.com/EleutherAI/lm-evaluation-harness/pull/3951) Include generation_kwargs in the request cache key |
 | [bentoml/BentoML](https://github.com/bentoml/BentoML) (8.9k⭐) | [#5676](https://github.com/bentoml/BentoML/pull/5676) Keep every URL value of a multipart list field |
 | [cvxpy/cvxpy](https://github.com/cvxpy/cvxpy) (6.4k⭐) | [#3470](https://github.com/cvxpy/cvxpy/pull/3470) Stop internal parameter checks warning about sparse .value reads |
 | [huggingface/lighteval](https://github.com/huggingface/lighteval) (2.6k⭐) | [#1314](https://github.com/huggingface/lighteval/pull/1314) Fix always-true conditional that made DEFAULT_FORMAT unreachable · [#1313](https://github.com/huggingface/lighteval/pull/1313) Fix litellm judge sending max_tokens as a 1-tuple |
